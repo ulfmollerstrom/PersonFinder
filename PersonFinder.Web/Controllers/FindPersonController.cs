@@ -14,6 +14,7 @@ namespace PersonFinder.Web.Controllers
 {
     public class FindPersonController : Controller
     {
+        //http://localhost:XXXXX/FindPerson/?fname=nils&lname=andersson&yyyymmdd=19700501
         [WebMethod]
         [ScriptMethod(UseHttpGet = true, ResponseFormat = ResponseFormat.Json)]
         public JsonResult Index(string fName, string lName, string yyyymmdd = "")
