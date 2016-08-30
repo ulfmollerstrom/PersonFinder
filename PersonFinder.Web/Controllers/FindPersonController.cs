@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using System.Web.Mvc;
 using System.Web.Script.Services;
 using System.Web.Services;
@@ -16,7 +17,17 @@ namespace PersonFinder.Web.Controllers
             try
             {
                 var persons = Ratsit.FindPersons(fName, lName, yyyymmdd);
-                return Json(new { Antal = persons.Count, Resultat = persons }, JsonRequestBehavior.AllowGet);
+
+                var extendedPersons =
+                    persons.Select(
+                        p =>
+                            new
+                            {
+                                Person = p,
+                                Position = Geo.GeoData.GetPosition($"{p.Gatuadress} {p.Postnummer} {p.Postort}")
+                            });
+
+                return Json(new { Antal = persons.Count, Resultat = extendedPersons }, JsonRequestBehavior.AllowGet);
             }
             catch (Exception exception)
             {

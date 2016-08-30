@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RatsitPersonFinder.Test", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonFinder.Web", "PersonFinder.Web\PersonFinder.Web.csproj", "{FFA911F5-06A9-4C25-BF12-761D15ADD433}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonFinder.Geo", "PersonFinder.Geo\PersonFinder.Geo.csproj", "{19F60A70-64F8-43D2-95BE-47B4DF42A5D3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{FFA911F5-06A9-4C25-BF12-761D15ADD433}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FFA911F5-06A9-4C25-BF12-761D15ADD433}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FFA911F5-06A9-4C25-BF12-761D15ADD433}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19F60A70-64F8-43D2-95BE-47B4DF42A5D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19F60A70-64F8-43D2-95BE-47B4DF42A5D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19F60A70-64F8-43D2-95BE-47B4DF42A5D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19F60A70-64F8-43D2-95BE-47B4DF42A5D3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
